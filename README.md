@@ -50,7 +50,9 @@ The bare bone walkthrough scenario happens on the command Line:
 
 Once you paste the code to your respective IDE, all you need is to run
 
-There are instructions prompts that appear before every decision one can make on the command line of your IDE
+There are instruction prompts that appear before every decision one can make on the command line of your IDE
+
+***Most  common edge case were sorta fixed however feel free to find a bug and comment it
 
 # Reasons for creation of this project
  1. Team Collaboration : The class heavily stressed the key to learn how to code with other team members from readable code and coordination of tasks
