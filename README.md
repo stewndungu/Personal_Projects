@@ -11,7 +11,7 @@
 # Choco-Data Center (Java)
 
 
-Hey, this is a University for a Software Engineering class. Long story short, there is this service called Choc-An where they give therapeutic services for people addicted to chocolate. I know weird case study!
+Hey, this is a University project for a Software Engineering class. Long story short, there is this company called Choc-An where they give therapeutic services for people addicted to chocolate. And we need to create a system for them that goes from checking in, service, bill, reports at the end of week and month
 
 # Description of Actors
 Either way the idea was to create a system that have these Prime actors:
