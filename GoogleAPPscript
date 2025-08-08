@@ -1,0 +1,42 @@
+function myFunction() {
+
+  var recipient = "whomever@gmail.com"; // Replace with a real email
+  var subject = "Inventory Expire Alert:  ";
+  var body = "The document has the items that will expire within the month. Please remove them before they expire. ";
+  var folderId = "some-long-alphanumeric-digits"; // check your folderID on the url bar of the folder in google docs
+
+  
+ const folder = DriveApp.getFolderById(folderId);
+  const files = folder.getFiles();
+  let latestFile = null;
+  let latestCreatedDate = new Date(0);
+
+  // Find the most recently created file
+  while (files.hasNext()) {
+    const file = files.next();
+    const createdDate = file.getDateCreated(); // Changed to getDateCreated()
+    if (createdDate > latestCreatedDate) {
+      latestFile = file;
+      latestCreatedDate = createdDate;
+    }
+  }
+  if (latestFile) {
+    let attachment;
+    const mimeType = latestFile.getMimeType();
+
+    if (mimeType === MimeType.GOOGLE_DOCS ||
+        mimeType === MimeType.GOOGLE_SHEETS ||
+        mimeType === MimeType.GOOGLE_SLIDES) {
+      // Convert Google-native files to PDF
+      attachment = latestFile.getAs(MimeType.PDF);
+    } else {
+      // Non-Google files can be attached directly
+      attachment = latestFile.getBlob();
+    }
+
+    MailApp.sendEmail(recipient, subject, body, { cc: "stew.m.ndungu@gmail.com",
+      attachments: [attachment]
+    });
+  }
+
+}
