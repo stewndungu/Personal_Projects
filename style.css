@@ -1,0 +1,34 @@
+
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index:-100;
+  }
+div.Brand,div.Name, div.Date{
+    float: left;
+    margin:55px;
+    color:rgb(0, 0, 0);
+ 
+}
+
+
+div.update,div.delete, div.insert{
+   display: block;
+   float:left;
+   margin:105px;
+   
+}
+    p.explain{
+    text-align:center;  
+    text-size-adjust: 90%; 
+    color:black;
+    }
+
+
+    
+    
+
