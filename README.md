@@ -47,4 +47,5 @@ _A guide on how to install the tools needed for running the project._
 - Click the link provided at the top and sign in to your google account
 
 - You can copy the code for the script in Google App Script
+    --- Go to editor > create your own gs file. I just typed code.gs >paste the code
 ```
