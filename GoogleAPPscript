@@ -34,7 +34,7 @@ function myFunction() {
       attachment = latestFile.getBlob();
     }
 
-    MailApp.sendEmail(recipient, subject, body, { cc: "stew.m.ndungu@gmail.com",
+    MailApp.sendEmail(recipient, subject, body, { cc: "whoever you want @ gmail.com",
       attachments: [attachment]
     });
   }
