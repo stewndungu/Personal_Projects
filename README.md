@@ -7,11 +7,13 @@
 
 # Expiration Inventory
 
-The premise was to help the small convenience store that I work for to track the dates for their items. So employees can remove them before their expiration date
+The premise was to help a small convenience store that I work for to track the dates for their items. So employees can remove them before their expiration date
 
 ## Extra Needed Applications
  - [PHP Admin](https://www.phpmyadmin.net/downloads/) - To store the items in distinct categorized databases
  - [Google App Script](https://developers.google.com/apps-script) - Connects to your databases through the BAT Files and send an email to whomever is the supervisor/manager of the recent list
+ - [Google Drive for Desktop](https://support.google.com/drive/answer/10838124?hl=en) - Hold you files in you computer when the .bat pulls the latest query and saves in a file
+ - [Xampp](https://www.apachefriends.org/download.html) 
 
 
 ### Prerequisites Knowledge
@@ -24,6 +26,7 @@ _Have a good understanding of these topics & subtopics in case you want to edit 
 - HTML & CSS
 - Understanding of Google drive
 - -Javascript
+  
 ### Prerequisites Steps
 _A guide on how to install the tools needed for running the project._
 
