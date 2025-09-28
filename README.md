@@ -22,6 +22,7 @@ _Have a good understanding of these topics & subtopics in case you want to edit 
 - PHP
 - BAT
 - HTML & CSS
+- Understanding of Google drive
 ### Prerequisites Steps
 _A guide on how to install the tools needed for running the project._
 
@@ -42,10 +43,11 @@ _A guide on how to install the tools needed for running the project._
       --- You can also search up solutions as well, they tend to involve the config.ini file that holds info like password for DB & port number
     
 ```
- - Google App Script
+ - [Google App Script](https://developers.google.com/apps-script/) click start scripting
 ```bash
 - Click the link provided at the top and sign in to your google account
 
-- You can copy the code for the script in Google App Script
+- You can copy the code for the script in Google App Script (Called: GoogleAPPScript)
     --- Go to editor > create your own gs file. I just typed code.gs >paste the code
+- Notice the 
 ```
