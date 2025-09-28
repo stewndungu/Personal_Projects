@@ -30,6 +30,7 @@
                 
                  <form class="Brands_input" action="search/search.php" method="post" >
                         <select id="Area" name="Area">
+                        <!--  choose which ever name you want for the values, but must match the categories in the database --> 
                         <option value="Tobacco">Tobacco</option>
                         <option value="Medicine">Medicine</option>
                         <option value="Beverages">Beverages</option>
@@ -149,3 +150,4 @@
 
 
 </html>
+
