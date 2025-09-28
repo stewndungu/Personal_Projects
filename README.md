@@ -60,3 +60,19 @@ _A guide on how to install the tools needed for running the project._
  - Once you made the folder, click to go into it, then check at the url bar and see the long alphanumeric writing after the "/"
    - Thats the folder ID
 ```
+- [Xampp]()
+```
+  - Now follow the link above and download xampp
+  - Once you start installation, you will get a setup bar
+     - You only need SQL & phpadmin for this project, but if you want more thats fine
+  - Once completed, you will have to go to the windows search bar and type xampp control panel
+  - Once inside, you will need to click both apache and sql to start
+    - key issues mainly with the sql is if the MAriaDB from xampp is using the same port as another DB
+           - you will need to change the port number at the config button which will point you to a config file.
+           - you can find the find button on you text editor and type ports to find the config area for it
+  _ Also this DB does not have a password set for it, if you want the password set_
+      - change on the sql itself through localhost:
+      - cahnge the username & password in the config files
+      - change the parameters int 
+```
+  
