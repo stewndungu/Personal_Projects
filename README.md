@@ -23,6 +23,7 @@ _Have a good understanding of these topics & subtopics in case you want to edit 
 - BAT
 - HTML & CSS
 - Understanding of Google drive
+- -Javascript
 ### Prerequisites Steps
 _A guide on how to install the tools needed for running the project._
 
@@ -43,11 +44,19 @@ _A guide on how to install the tools needed for running the project._
       --- You can also search up solutions as well, they tend to involve the config.ini file that holds info like password for DB & port number
     
 ```
- - [Google App Script](https://developers.google.com/apps-script/) click start scripting
+ - [Google App Script](https://developers.google.com/apps-script/) : click start scripting
 ```bash
 - Click the link provided at the top and sign in to your google account
 
 - You can copy the code for the script in Google App Script (Called: GoogleAPPScript)
     --- Go to editor > create your own gs file. I just typed code.gs >paste the code
-- Notice the 
+- Notice the "var folder id". That variable comes from the url of from your google drive
+```
+- [Google Drive for Desktop](https://support.google.com/drive/answer/10838124?hl=en) : scroll down to find the instructions for download
+```
+ - Got to the google drive for desktop link
+ - Make sure the same account you signed up for google app script is the same for the google drive for desktop
+ - Make a folder the files
+ - Once you made the folder, click to go into it, then check at the url bar and see the long alphanumeric writing after the "/"
+   - Thats the folder ID
 ```
