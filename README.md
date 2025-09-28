@@ -60,7 +60,7 @@ _A guide on how to install the tools needed for running the project._
  - Once you made the folder, click to go into it, then check at the url bar and see the long alphanumeric writing after the "/"
    - Thats the folder ID
 ```
-- [Xampp]()
+- [Xampp](https://www.apachefriends.org/download.html) 
 ```
   - Now follow the link above and download xampp
   - Once you start installation, you will get a setup bar
@@ -70,9 +70,11 @@ _A guide on how to install the tools needed for running the project._
     - key issues mainly with the sql is if the MAriaDB from xampp is using the same port as another DB
            - you will need to change the port number at the config button which will point you to a config file.
            - you can find the find button on you text editor and type ports to find the config area for it
+    -Any other issues can be searched on google to find a video about it
+
   _ Also this DB does not have a password set for it, if you want the password set_
       - change on the sql itself through localhost:
       - cahnge the username & password in the config files
-      - change the parameters int 
+      - change the parameters in trial.bat
 ```
   
