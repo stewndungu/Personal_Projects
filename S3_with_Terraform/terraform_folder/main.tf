@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "my_bucket" {
-  bucket = "nextwork-unique-bucket--" # Make sure this bucket name is globally unique by typing a long random number
+  bucket = "nextwork-unique-bucket-smn-129741082937412839740987" # Make sure this bucket name is globally unique by typing a long random number
 }
 
 resource "aws_s3_bucket_public_access_block" "my_bucket_public_access_block" {
