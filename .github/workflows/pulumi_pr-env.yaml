@@ -1,0 +1,26 @@
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths:
+      - "Pulumi-floci/pulumi-start-aws-floci/**"
+jobs:
+  pr-env:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Pulumi-floci/pulumi-start-aws-floci
+    services:
+      floci: { image: "floci/floci:latest", ports: ["4566:4566"] }
+    env:
+      AWS_ACCESS_KEY_ID: mock_key
+      AWS_SECRET_ACCESS_KEY: mock_secret
+      AWS_DEFAULT_REGION: us-east-2
+      PULUMI_CONFIG_PASSPHRASE: ""
+    steps:
+      - uses: actions/checkout@v4
+      - run: |            # after installing pulumi CLI + pip deps
+          pulumi login --local
+          pulumi stack init development && pulumi up --yes
+          pulumi stack init pr-${{ github.event.number }} --copy-config-from development
+          pulumi up --yes
+          # run your integration tests against localhost:4566 here
