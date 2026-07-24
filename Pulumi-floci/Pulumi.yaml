@@ -1,0 +1,11 @@
+name: floci-pulumi-aws
+description: Testing out how pulumi can use aws with the floci as mock
+runtime:
+  name: python
+  options:
+    toolchain: pip
+    virtualenv: venv
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: aws-python
