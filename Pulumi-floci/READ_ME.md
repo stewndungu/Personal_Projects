@@ -13,6 +13,7 @@ This a demo to understand  how to use pulumi with floci
         - export proviver-key-id = mock_key
         - export provider-secret-access = mock_secret
         - export provider-default-region = "whatever region u are in"
+        - export PROVIDER_ENDPOINT_URL=http://localhost:4566
 
 - pulumi config set provider:variable <depends your own provider> <check pulumi guid or look online for more details>
 - make sure you declare the services in your main.py
