@@ -1,0 +1,15 @@
+encryptionsalt: v1:peY+MPoiknk=:v1:yxsjMW3xgJlH6mhi:OognfHJK7qGRJ+cUqbYBlD0mhD0rdw==
+config:
+  aws:accessKey: mock_key
+  aws:endpoints:
+    - s3: http://localhost:4566
+    - ecs: http://localhost:4566
+    - secretsmanager: http://localhost:4566
+    - ecr: http://localhost:4566
+    - iam: http://localhost:4566
+  aws:region: us-east-2
+  aws:s3UsePathStyle: "true"
+  aws:secretKey: mock_key
+  aws:skipCredentialsValidation: "true"
+  aws:skipMetadataApiCheck: "true"
+  aws:skipRequestingAccountId: "true"
